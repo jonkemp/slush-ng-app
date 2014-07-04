@@ -25,15 +25,13 @@ Run the generator from within the new folder:
 $ cd my-slush-ng-app && slush ng-app
 ```
 
-Once you run the generator, you will not need to run `npm install` or `bower install` as that is done automatically by the generator. See the [angular-seed](https://github.com/angular/angular-seed) docs for more information.
+Once you run the generator, you will not need to run `npm install` or `bower install` as that is done automatically by the generator.
+
+See the [angular-seed](https://github.com/angular/angular-seed) docs for more information.
 
 ## Getting To Know Slush
 
-Slush is a tool that uses Gulp for project scaffolding.
-
-Slush does not contain anything "out of the box", except the ability to locate installed slush generators and to run them with liftoff.
-
-To find out more about Slush, check out the [documentation](https://github.com/klei/slush).
+Slush is a tool that uses Gulp for project scaffolding. To find out more about Slush, check out the [documentation](https://github.com/slushjs/slush).
 
 ## Contributing
 
