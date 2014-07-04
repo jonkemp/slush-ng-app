@@ -60,7 +60,7 @@ gulp.task('default', function (done) {
             .pipe(conflict('./'))
             .pipe(gulp.dest('./'))
             .pipe(install())
-            .on('end', function () {
+            .on('finish', function () {
                 done();
             });
     });
