@@ -63,5 +63,26 @@ gulp.task('default', function (done) {
             .on('finish', function () {
                 done();
             });
+
+        process.on('exit', function () {
+            var skipInstall = process.argv.slice(2).indexOf('--skip-install') >= 0;
+
+            if (!skipInstall) {
+                var fs = require('fs'),
+                    wiredep = require('wiredep'),
+                    bowerJson = JSON.parse(fs.readFileSync('./bower.json'));
+
+                // wire Bower packages to .html
+                wiredep({
+                    bowerJson: bowerJson,
+                    directory: 'app/bower_components',
+                    src: 'app/index.html'
+                });
+            } else {
+                gutil.log('After running `npm install & bower install`, inject your front end dependencies into');
+                gutil.log('your HTML by running:');
+                gutil.log('  gulp wiredep');
+            }
+        });
     });
 });
