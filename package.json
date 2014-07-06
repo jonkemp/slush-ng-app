@@ -37,7 +37,8 @@
     "gulp-util": "^2.2.19",
     "inquirer": "^0.5.1",
     "slush": ">=1.0.0",
-    "underscore.string": "^2.3.3"
+    "underscore.string": "^2.3.3",
+    "wiredep": "^1.8.1"
   },
   "devDependencies": {
     "mocha": "*",
