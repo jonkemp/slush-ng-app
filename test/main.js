@@ -29,6 +29,7 @@ function mockPrompt(answers) {
 describe('slush-ng-app', function() {
     before(function () {
         process.chdir(__dirname);
+        process.argv.push('--skip-install');
     });
 
     describe('default generator', function () {
