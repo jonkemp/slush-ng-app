@@ -27,7 +27,14 @@ $ cd my-slush-ng-app && slush ng-app
 
 Once you run the generator, you will not need to run `npm install` or `bower install` as that is done automatically by the generator.
 
+In addition, you can now use Gulp to preview your app by running `gulp serve`, instead of `npm start`. To see what else you can do with Gulp, check out the [gulpfile.js](https://github.com/jonkemp/slush-ng-app/blob/master/templates/gulpfile.js).
+
 See the [angular-seed](https://github.com/angular/angular-seed) docs for more information.
+
+## Options
+
+- `--skip-install`
+  Skips the automatic execution of `bower` and `npm` after scaffolding has finished.
 
 ## Getting To Know Slush
 
