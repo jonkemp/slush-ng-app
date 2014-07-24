@@ -51,6 +51,7 @@ describe('slush-ng-app', function() {
             gulp.start('default').once('stop', function () {
                 mockGulpDest.assertDestContains([
                     '.bowerrc',
+                    '.editorconfig',
                     '.gitignore',
                     '.jshintrc',
                     '.travis.yml',
