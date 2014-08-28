@@ -1,7 +1,7 @@
 {
   "name": "slush-ng-app",
   "description": "Generator for AngularJS web apps using angular-seed and Gulp",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonkemp/slush-ng-app",
   "author": {
     "name": "Jonathan Kemp",
