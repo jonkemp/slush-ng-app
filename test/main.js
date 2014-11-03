@@ -66,19 +66,21 @@ describe('slush-ng-app', function() {
                     'app/css/main.css',
                     'app/css/app.css',
                     'app/js/app.js',
-                    'app/js/controllers.js',
-                    'app/js/directives.js',
-                    'app/js/filters.js',
-                    'app/js/services.js',
-                    'app/partials/partial1.html',
-                    'app/partials/partial2.html',
+                    'app/components/version/interpolate-filter_test.js',
+                    'app/components/version/interpolate-filter.js',
+                    'app/components/version/version_test.js',
+                    'app/components/version/version-directive_test.js',
+                    'app/components/version/version-directive.js',
+                    'app/components/version/version.js',
+                    'app/view1/view1.html',
+                    'app/view1/view1.js',
+                    'app/view1/view1_test.js',
+                    'app/view2/view2.html',
+                    'app/view2/view2.js',
+                    'app/view2/view2_test.js',
                     'test/karma.conf.js',
-                    'test/protractor-conf.js',
-                    'test/e2e/scenarios.js',
-                    'test/unit/controllersSpec.js',
-                    'test/unit/directivesSpec.js',
-                    'test/unit/filtersSpec.js',
-                    'test/unit/servicesSpec.js'
+                    'test/e2e-tests/protractor.conf.js',
+                    'test/e2e-tests/scenarios.js'
                 ]);
 
                 done();
