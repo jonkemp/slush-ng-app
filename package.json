@@ -29,16 +29,16 @@
     "test": "mocha"
   },
   "dependencies": {
-    "gulp": "^3.8.5",
+    "gulp": "^3.8.9",
     "gulp-conflict": "^0.2.0",
     "gulp-install": "^0.2.0",
     "gulp-rename": "^1.2.0",
-    "gulp-template": "^1.0.0",
+    "gulp-template": "^1.1.1",
     "gulp-util": "^3.0.0",
-    "inquirer": "^0.6.0",
+    "inquirer": "^0.8.0",
     "slush": ">=1.0.0",
     "underscore.string": "^2.3.3",
-    "wiredep": "^1.8.1"
+    "wiredep": "^2.0.0"
   },
   "devDependencies": {
     "mocha": "*",
