@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-  <style>
-    [ng-cloak] {
-      display: none;
-    }
-  </style>
-  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <!-- build:css css/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js js/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
   <script>
     // include angular loader, which allows the files to load in any order
     //@@NG_LOADER_START@@
@@ -31,17 +32,20 @@
       'bower_components/angular/angular.js',
       'bower_components/angular-route/angular-route.js',
       'js/app.js',
-      'js/services.js',
-      'js/controllers.js',
-      'js/filters.js',
-      'js/directives.js'
+      'view1/view1.js',
+      'view2/view2.js',
+      'components/version/version.js',
+      'components/version/version-directive.js',
+      'components/version/interpolate-filter.js'
     ], function() {
       // when all is done, execute bootstrap angular application
       angular.bootstrap(document, ['myApp']);
     });
   </script>
-  <title>My AngularJS App</title>
+  <title><%= appNameSlug %></title>
+  <!-- build:css css/app.css -->
   <link rel="stylesheet" href="css/app.css">
+  <!-- endbuild -->
 </head>
 <body ng-cloak>
   <ul class="menu">
