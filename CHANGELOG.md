@@ -1,5 +1,9 @@
 # slush-ng-app changelog
 
+# 1.1.0
+
+- Bump Angular.js from 1.2.x to 1.3.x.
+
 # 1.0.0
 
 - New gulpfile.js.
